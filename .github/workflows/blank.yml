@@ -1,0 +1,11 @@
+name: Start Docker Image
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run_docker:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run Docker Image sebiboga/techabreak02
+      run: docker run  sebiboga/techabreak02
